@@ -16,6 +16,7 @@ const InputBox = () => {
       <input
         className="text-xl font-light border-none outline-none"
         type="text"
+        value={InputValue}
         placeholder="Search by City or Country"
         onChange={(e) => setInputVal(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && handleSearch()}
